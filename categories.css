@@ -1,0 +1,274 @@
+@import url('fonts.css');
+
+/* Master styles*/
+body{
+    margin: 0px;
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.btn{
+    border: none; 
+    font-family: Livvic;
+    cursor: pointer;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%) !important;
+}
+
+.website{
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+/* Navigation styles */
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+
+}
+
+.left-side{
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+
+}
+
+.nav-link-wrapper{
+    height: 22px;
+    border-bottom: 4px solid transparent;
+
+    transition: border-bottom 0.5s ;
+}
+
+.brand{
+    font-family: Abel, cursive;
+    font-size: 1.5rem;
+    font-weight: 39px;
+    color: #8a8a8a;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+    font-family: Lexend;
+    font-weight: 900;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 4px solid black;
+    border-radius: 5px;
+}
+
+.nav-link-wrapper a:hover{
+    color: black;
+}
+
+
+/* header styles*/
+.container{
+    width: 100%;
+    height: 100vph;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url('widebgautumn.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.row{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+.col1{
+    margin-left: 3rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+}
+
+.col1 p{
+    color: white;
+    font-size: 20px;
+    line-height: 15px;
+}
+
+.col1 button{
+    width: 180px;
+    color: black;
+    font-size: 12px;
+    padding: 12px 0;
+    background: white;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card1{
+    background-image: url(ahwera3.jpg);
+}
+.card2{
+    background-image: url(ingrid1.jpg);
+}
+.card3{
+    background-image: url(trevor3.jpg);
+}
+.card4{
+    background-image: url(william1.jpg);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card h5{
+    color: white;
+    text-shadow: 0 0 5px #999;
+    font-size: 17px;
+    color: whitesmoke;
+}
+
+.card p{
+    text-shadow: 0 0 5px #000;
+    font-size: 14px;
+    color: whitesmoke;
+}
+
+.card:hover h5{
+    color: white;
+}
+
+.card:hover p{
+    color: white;
+}
+
+/* portfolio styles*/
+.portfolio-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper{
+    position: relative;
+
+}
+
+.portfolio-img-background{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.img-text-wrapper .subtitle{
+    transition: 1s;
+    color: transparent;
+    font-weight: 600;
+    font-family: Abel;
+}
+
+.img-text-wrapper:hover .subtitle{
+    font-weight: 600;
+    color: lightseagreen;
+}
+
+.img-darken{
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+
+
+
+/* Viewprt less than or equal to 1130px*/
+
+@media only screen and (max-width: 1130px) {
+
+}
+
+/* Viewprt less than or equal to 800px*/
+
+@media only screen and (max-width: 800px) {
+    .portfolio-items-wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap !important;
+        justify-content: center;
+    }
+
+    
+}
+
+/* Viewprt less than or equal to 520px*/
+
+@media only screen and (max-width: 520px) {
+    .portfolio-items-wrapper{
+        grid-template-columns: 1fr;
+    }
+
+    .col2{
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+}
+
