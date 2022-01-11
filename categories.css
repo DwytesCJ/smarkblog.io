@@ -78,7 +78,7 @@ body{
 .container{
     width: 100%;
     height: 100vph;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url('widebg/widebgautumn.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url('widebgautumn.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
